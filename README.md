@@ -1,6 +1,6 @@
 # 🚀 Azure Infrastructure Reporter & Automation
 
-Este repositorio contiene un conjunto de utilidades y scripts en Bash diseñados para interactuar con la **[Azure CLI](https://learn.microsoft.com)**. El objetivo principal es facilitar la auditoría rápida, el control de costos y la gestión de recursos en entornos de **Microsoft Azure**.
+Este repositorio contiene un conjunto de utilidades y scripts en Bash diseñados para interactuar con **[Azure PowerShell](https://learn.microsoft.com/es-es/powershell/azure/?view=azps-15.3.0)**. El objetivo principal es facilitar la auditoría rápida, el control de costos y la gestión de recursos en entornos de **Microsoft Azure**.
 
 ## 📋 Características
 
