@@ -1,10 +1,10 @@
 # 🚀 Azure Infrastructure Reporter & Automation
 
-Este repositorio contiene un conjunto de utilidades y scripts en Bash diseñados para interactuar con **[Azure PowerShell](https://learn.microsoft.com/es-es/powershell/azure/?view=azps-15.3.0)**. El objetivo principal es facilitar la auditoría rápida, el control de costos y la gestión de recursos en entornos de **Microsoft Azure**.
+Este repositorio contiene un conjunto de utilidades y scripts en Bash diseñados para interactuar con **[Azure PowerShell](https://learn.microsoft.com/es-es/powershell/azure/?view=azps-15.3.0)** o **[Azure CLI](https://learn.microsoft.com/es-es/cli/azure/?view=azure-cli-latest)**. El objetivo principal es facilitar la auditoría rápida, el control de costos y la gestión de recursos en entornos de **Microsoft Azure**.
 
 ## 📋 Características
 
-El script principal (`azure_report.sh`) automatiza la recolección de datos críticos:
+El script principal para PowerShell (`azure_report.ps1`) o Bash (`azure_report.sh`) automatiza la recolección de datos críticos:
 
 *   **Identidad:** Verifica la suscripción activa, el ID del Tenant y los detalles del usuario o Service Principal actual.
 *   **Virtual Machines (VM):** Tabla resumen con nombres, tamaños de instancia, estados de ejecución y direcciones IP públicas.
@@ -12,9 +12,9 @@ El script principal (`azure_report.sh`) automatiza la recolección de datos crí
 *   **Cost Optimization:** Identificación de **Managed Disks** (discos administrados) en estado `Unattached` que generan cargos innecesarios al no estar asociados a ninguna VM.
 *   **Seguridad:** Reporte de usuarios y roles asignados mediante **[Microsoft Entra ID](https://learn.microsoft.com)** (antes Azure AD) para control de acceso.
 
-El script de comandos (`script_comandos.md`) es una guia básica de los principales comandos de Azure en PowerShell
+Por su parte, en (`comandos.md`) he recopilado una serie de comandos básicos para usar en Azure en PowerShell.
 
-## 🛠️ Requisitos Previos
+## 🛠️ Requisitos Previos para usar un script
 
 *   **Usar Azure Portal o tener Azure PowerShell instalado:** Sigue la [guía oficial de instalación de Microsoft](https://learn.microsoft.com/es-es/powershell/azure/install-azure-powershell?view=azps-15.3.0).
 *   **Sesión Iniciada:** El script utiliza tu perfil de autenticación activo. Configúralo con:
@@ -25,8 +25,14 @@ az login
 
 *   **Permisos RBAC:** El usuario debe tener al menos permisos de Lector (Reader) a nivel de suscripción para visualizar los recursos.
 
-## 🚀 Uso rápido del script principal
+## 🚀 Uso rápido del script
 
+### En PowerShell ###
+*   **Clona este repositorio.**
+*   **Habilita la ejecución de scripts (si es necesario): Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process**
+*   **Ejecuta el reporte: ./azure_report.ps1.**
+  
+### En CLI ###
 *   **Clona este repositorio.**
 *   **Dale permisos de ejecución: chmod +x azure_report.sh.**
 *   **Ejecuta el reporte: ./azure_report.sh.**
