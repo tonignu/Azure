@@ -1,6 +1,6 @@
 # 🚀 Azure Infrastructure Reporter & Automation
 
-Este repositorio contiene un conjunto de utilidades y scripts en Bash diseñados para interactuar con **[Azure PowerShell](https://learn.microsoft.com/es-es/powershell/azure/?view=azps-15.3.0)** o **[Azure CLI](https://learn.microsoft.com/es-es/cli/azure/?view=azure-cli-latest)**. El objetivo principal es facilitar la auditoría rápida, el control de costos y la gestión de recursos en entornos de **Microsoft Azure**.
+Este repositorio contiene un conjunto de utilidades y scripts diseñados para interactuar con **[Azure PowerShell](https://learn.microsoft.com/es-es/powershell/azure/?view=azps-15.3.0)** o **[Azure CLI](https://learn.microsoft.com/es-es/cli/azure/?view=azure-cli-latest)**. El objetivo principal es facilitar la auditoría rápida, el control de costos y la gestión de recursos en entornos de **Microsoft Azure**.
 
 ## 📋 Características
 
@@ -12,7 +12,7 @@ El script principal para PowerShell (`azure_report.ps1`) o Bash (`azure_report.s
 *   **Cost Optimization:** Identificación de **Managed Disks** (discos administrados) en estado `Unattached` que generan cargos innecesarios al no estar asociados a ninguna VM.
 *   **Seguridad:** Reporte de usuarios y roles asignados mediante **[Microsoft Entra ID](https://learn.microsoft.com)** (antes Azure AD) para control de acceso.
 
-Por su parte, en (`comandos.md`) he recopilado una serie de comandos básicos para usar en Azure en PowerShell.
+Por su parte, en (`comandos.md`) he recopilado una serie de comandos básicos para usar en PowerShell.
 
 ## 🛠️ Requisitos Previos para usar un script
 
@@ -25,7 +25,7 @@ az login
 
 *   **Permisos RBAC:** El usuario debe tener al menos permisos de Lector (Reader) a nivel de suscripción para visualizar los recursos.
 
-## 🚀 Uso rápido del script
+## ▶️ Uso rápido del script
 
 ### En PowerShell ###
 *   **Clona este repositorio.**
