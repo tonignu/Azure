@@ -12,7 +12,7 @@ El script principal para PowerShell (`azure_report.ps1`) o Bash (`azure_report.s
 *   **Cost Optimization:** Identificación de **Managed Disks** (discos administrados) en estado `Unattached` que generan cargos innecesarios al no estar asociados a ninguna VM.
 *   **Seguridad:** Reporte de usuarios y roles asignados mediante **[Microsoft Entra ID](https://learn.microsoft.com)** (antes Azure AD) para control de acceso.
 
-Por su parte, en (`comandos.md`) he recopilado una serie de comandos básicos para usar en PowerShell.
+Por su parte, en (`comandos_basicos_powershell.md`) he recopilado una serie de comandos básicos para usar con PowerShell, y (`comandos_bash_azure.md`) permite realizar acciones sobre los principales servicios con Azure CLI.
 
 ## 🛠️ Requisitos Previos para usar un script
 
