@@ -16,7 +16,7 @@ El script de comandos (`script_comandos.md`) es una guia básica de los principa
 
 ## 🛠️ Requisitos Previos
 
-*   **Azure CLI Instalado:** Sigue la [guía oficial de instalación de Microsoft](https://learn.microsoft.com).
+*   **Usar Azure Portal o tener Azure PowerShell instalado:** Sigue la [guía oficial de instalación de Microsoft](https://learn.microsoft.com/es-es/powershell/azure/install-azure-powershell?view=azps-15.3.0).
 *   **Sesión Iniciada:** El script utiliza tu perfil de autenticación activo. Configúralo con:
 
 ```bash
