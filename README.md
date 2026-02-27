@@ -19,6 +19,10 @@ Por su parte, en (`comandos_basicos_powershell.md`) he recopilado una serie de c
 *   **Usar Azure Portal o tener Azure PowerShell instalado:** Sigue la [guía oficial de instalación de Microsoft](https://learn.microsoft.com/es-es/powershell/azure/install-azure-powershell?view=azps-15.3.0).
 *   **Sesión Iniciada:** El script utiliza tu perfil de autenticación activo. Configúralo con:
 
+```powershell
+Connect-AzAccount
+```
+o
 ```bash
 az login
 ```
